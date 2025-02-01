@@ -10,10 +10,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: black;
+            color: white;
         }
         header {
-            background: #ff6600;
+            background: black;
             color: white;
             padding: 15px 0;
             text-align: center;
@@ -35,23 +36,25 @@
         }
         .hero {
             text-align: center;
-            padding: 50px;
-            background: #ffa366;
+            padding: 100px;
+            background: url('bg1.png'); /* Sample animated background */
+            background-size: cover;
+            background-position: center;
         }
         .cta-button {
             display: inline-block;
             padding: 10px 20px;
-            background: #ff6600;
+            background: black;
             color: white;
             text-decoration: none;
             border-radius: 5px;
         }
         .events-section, .about-section, .contact-section {
             padding: 30px;
-            background: white;
+            background: rgba(255, 255, 255, 0.1);
             margin: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         .event-list {
             display: flex;
@@ -60,7 +63,7 @@
             justify-content: center;
         }
         .event {
-            background: #ffcc99;
+            background: rgba(255, 255, 255, 0.2);
             padding: 20px;
             border-radius: 5px;
             text-align: center;
@@ -70,15 +73,15 @@
             display: inline-block;
             margin-top: 10px;
             padding: 8px 15px;
-            background: #ff6600;
-            color: white;
+            background: white;
+            color: black;
             text-decoration: none;
             border-radius: 5px;
         }
         footer {
             text-align: center;
             padding: 10px;
-            background: #ff6600;
+            background: black;
             color: white;
         }
     </style>
@@ -99,3 +102,40 @@
     <section id="home" class="hero">
         <h1>Welcome to Mozilla Firefox Club</h1>
         <p>Stay updated with our latest events and workshops!</p>
+        <a href="#events" class="cta-button">View Events</a>
+    </section>
+    
+    <section id="events" class="events-section">
+        <h2>Upcoming Events</h2>
+        <div class="event-list">
+            <div class="event">
+                <h3>Web Development Workshop</h3>
+                <p>Date: February 10, 2025</p>
+                <p>Time: 4:00 PM - 6:00 PM</p>
+                <a href="#" class="event-btn">Register Now</a>
+            </div>
+            <div class="event">
+                <h3>Open Source Contribution Session</h3>
+                <p>Date: February 18, 2025</p>
+                <p>Time: 3:00 PM - 5:00 PM</p>
+                <a href="#" class="event-btn">Register Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Mozilla Firefox Club at VIT Bhopal is dedicated to fostering open-source development and empowering students through workshops, hackathons, and events.</p>
+    </section>
+    
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: mozillaclub@vitbhopal.ac.in</p>
+        <p>Follow us on social media for updates.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Mozilla Firefox Club | VIT Bhopal</p>
+    </footer>
+</body>
+</html>
